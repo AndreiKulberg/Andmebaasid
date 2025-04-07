@@ -1,1 +1,18 @@
 --Need sõnad on vaja pähe õppida!
+Andmed - данные
+Haldus - администрирование
+Andmebaaside haldussüsteemid - системы управления БД - СУБД - SQL Server / mariaDB/phpMyAdmin/localhost
+-----------------------------------------
+Tabel
+Rida=kirje - строка=запись
+Veerg=väli - столбец=поле
+Päring - запрос
+-----------------------------------------
+Käivita - запустить
+Värsenda - uuenda - обновить
+Laadi alla - скачать
+Laadi üles - загрузить
+Loo - создай
+-----------------------------------------
+PRIMARY KEY - primaarne võti - первичный ключ
+FOREIGN KEY - välis võti - внешний/вторичный ключ
