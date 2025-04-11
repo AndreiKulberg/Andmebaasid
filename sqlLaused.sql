@@ -86,3 +86,12 @@ INSERT INTO hinne(opilaneID, oppeaine, hinne)
 Values(2, 'Roobotika', 5);
 SELECT * from hinne;
 --sellect ...hinne join opilane!
+
+CREATE TABLE opetaja( opetajaID int Primary Key AUTO_INCREMENT, nimi varchar(25), perenimi varchar(30) Unique, telefon int);
+SELECT * FROM `opetaja`
+SELECT * FROM opetaja;
+INSERT INTO opetaja(nimi, perenimi, telefon) VALUES ('Mikhail', 'Agapov', '58000510'), ('Nikita', 'Podkopaev', '56998078'), ('Lury', 'Avik', '55544122');
+SELECT * FROM `opetaja`
+ALTER TABLE opetaja ADD ryhmID int;
+ALTER TABLE opetaja Add foreign key (ryhmID) references ryhm(ryhmID);
+SELECT * FROM opetaja JOIN ryhm ON opetaja.ryhmID=ryhm.ryhmID;
