@@ -35,7 +35,7 @@ VALUES ('Mark', 'Sebeko', '2006-02-27', 'Kehra', 1),
 --tabel Rühm
 --identity(1,1) - automaatselt täidab 1,2,3....
 CREATE TABLE ryhm(
-ryhmID int not null primary key identity(1,1),
+ryhmID int not null primary key AUTO_INCREMENT,
 ryhm varchar(10) unique,
 osakond varchar(20)
 );
@@ -71,7 +71,7 @@ VALUES ('Mark', 'nazaruk', '2006-02-27', 'Kehra', 1, 2 );
  ON o.ryhmID=r.ryhmID;
 
 CREATE TABLE hinne(
-hinneID int primary key identity(1,1),
+hinneID int primary key AUTO_INCREMENT,
 hinne int,
 opilaneID int,
 oppeaine varchar(50)
