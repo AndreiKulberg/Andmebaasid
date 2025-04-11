@@ -23,16 +23,15 @@ opilaskodu bit
 SELECT * FROM opilane;
 
 --tabeli kustutamine
-
 DROP table opilane;
---andmete lisamine tabelisse
 
+--andmete lisamine tabelisse
 INSERT INTO opilane(eesnimi, perenimi, synniaeg, aadress, opilaskodu)
 VALUES ('Mark', 'Sebeko', '2006-02-27', 'Kehra', 1),
 ('Mikhail', 'Leoke', '2008-12-7', 'Moscow', 1),
 ('Dmitri', 'Gordey', '2004-04-17', 'SPB', 1);
-
 --tabel Rühm
+
 --identity(1,1) - automaatselt täidab 1,2,3....
 CREATE TABLE ryhm(
 ryhmID int not null primary key AUTO_INCREMENT,
