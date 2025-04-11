@@ -1,10 +1,12 @@
 -- SQL kommentar
--- SQL Server Managment Stuudio
+-- XAMPP Control Panel (Start Apache, Start MySQL)
 -- connect to
--- (localdb)\mssqllocaldb
--- Autentification: Windows Auth - admini õigused localhostis
--- Autentification: SQL Server Auth - varem loodud kasutajad
--- New Query
+-- localhost
+-- Autentification:
+-- Autentification:
+--kasutajanimi - root
+--parool ei ole
+--SQL:
 
 CREATE DATABASE kulberg;
 --Object Explorer on vaja pidevalt uuendada käsitsi!
