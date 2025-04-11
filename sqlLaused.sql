@@ -122,4 +122,4 @@ ADD foreign key (opilaneID) references opilane;
 INSERT INTO hinne(opilaneID, oppeaine, hinne)
 Values(2, 'Roobotika', 5);
 SELECT * from hinne;
---hinne join opilane!;
+--sellect ...hinne join opilane!
