@@ -95,3 +95,15 @@ SELECT * FROM `opetaja`
 ALTER TABLE opetaja ADD ryhmID int;
 ALTER TABLE opetaja Add foreign key (ryhmID) references ryhm(ryhmID);
 SELECT * FROM opetaja JOIN ryhm ON opetaja.ryhmID=ryhm.ryhmID;
+
+
+
+
+
+
+
+BEGIN
+SELECT filmNimetus, pikkus
+FROM film
+WHERE filmNimetus LIKE CONCAT(taht, '%');
+END
