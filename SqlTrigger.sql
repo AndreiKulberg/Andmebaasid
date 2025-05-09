@@ -163,3 +163,30 @@ DELETE FROM
     products
 WHERE 
     product_id = 1;
+
+
+
+XAMPP
+
+CREATE TABLE products(
+product_id int primary AUTO_INCREMENT,
+product_name varchar(50),
+brand_id int,
+category_id int,
+model_year int,
+list_price int
+);
+
+CREATE TABLE product_audits(
+    change_id INT AUTO_INCREMENT PRIMARY KEY,
+    product_id INT NOT NULL,
+    product_name VARCHAR(255) NOT NULL,
+    brand_id INT NOT NULL,
+    category_id INT NOT NULL,
+    model_year SMALLINT NOT NULL,
+    list_price DECIMAL(10,2) NOT NULL,
+    updated_at DATETIME NOT NULL,
+    operation CHAR(3) NOT NULL
+    CHECK(operation = 'INS' or operation='DEL')
+);
+
